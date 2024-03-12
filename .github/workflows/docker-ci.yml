@@ -10,4 +10,6 @@ jobs:
         run:
           sudo apt-get update
           sudo apt-get install make
-          make --version
+      - shell: bash
+        run:
+          make docker_build
