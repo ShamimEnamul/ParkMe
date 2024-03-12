@@ -5,8 +5,8 @@ docker_build:
 	@ echo "Building docker image ${IMG}"
 	@ docker build -t ${IMG_NAME}:${IMG_TAG} .
 
- docker_push:
- 	@ docker push ${IMG_NAME}:${IMG_TAG}
-
- docker_login:
- 	@ docker login
+# docker_push:
+# 	@ docker push ${IMG_NAME}:${IMG_TAG}
+#
+# docker_login:
+# 	@ docker login
