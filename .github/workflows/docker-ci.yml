@@ -1,7 +1,7 @@
 name: learn-ci-docker
 run-name: ${{github.actor}} is learning Github Actions
 
-on: [push]
+on:
 jobs:
   install-makefile:
     runs-on: ubuntu-latest
