@@ -12,6 +12,5 @@ jobs:
           sudo apt-get update
           sudo apt-get install make
       - shell: bash
-        run: | 
-          make docker_build IMG=learn_docker_ci
+        run: make docker_build IMG=learn_docker_ci
 
