@@ -6,10 +6,11 @@ jobs:
   install-makefile:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - shell: bash
-        run:
+        run: |
           sudo apt-get update
           sudo apt-get install make
       - shell: bash
-        run:
+        run: |
           make docker_build
