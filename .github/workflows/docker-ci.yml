@@ -13,4 +13,6 @@ jobs:
           sudo apt-get install make
       - shell: bash
         run: |
-          make docker_build
+          make docker_build IMG=learn_docker_ci
+      
+
