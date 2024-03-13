@@ -14,10 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: install make
-      - shell: bash
+#      - shell: bash
         run: |
           sudo apt-get update
           sudo apt-get install make
       - name: Build docker from make file
-      - shell: bash
+#      - shell: bash
         run: make docker_build IMG=learn_docker_ci
