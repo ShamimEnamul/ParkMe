@@ -19,4 +19,12 @@ jobs:
           sudo apt-get install make
       - shell: bash
         run: make docker_build IMG=learn_docker_ci
+  run-docker-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v4
+      - shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install make
 
