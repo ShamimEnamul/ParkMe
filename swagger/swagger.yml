@@ -1,0 +1,878 @@
+swagger: "2.0"
+info:
+  title: beego Test API
+  description: |
+    beego has a very cool tools to autogenerate documents for your API
+  version: 1.0.0
+  termsOfService: http://beego.me/
+  contact:
+    email: astaxie@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+basePath: /v1
+paths:
+  /parking-lot/:
+    get:
+      tags:
+      - parking-lot
+      description: |-
+        get ParkingLot
+        <br>
+      operationId: ParkingLotController.GetAll
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ParkingLot'
+        "403":
+          description: ""
+    post:
+      tags:
+      - parking-lot
+      description: |-
+        create ParkingLot
+        <br>
+      operationId: ParkingLotController.Create
+      parameters:
+      - in: body
+        name: body
+        description: body for ParkingLot content
+        required: true
+        schema:
+          $ref: '#/definitions/models.ParkingLot'
+      responses:
+        "201":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ParkingLot'
+        "403":
+          description: body is empty
+  /parking-lot/{id}:
+    get:
+      tags:
+      - parking-lot
+      description: |-
+        get ParkingLot by id
+        <br>
+      operationId: ParkingLotController.GetOne
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ParkingLot'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - parking-lot
+      description: |-
+        update the ParkingLot
+        <br>
+      operationId: ParkingLotController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for ParkingLot content
+        required: true
+        schema:
+          $ref: '#/definitions/models.ParkingLot'
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ParkingLot'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - parking-lot
+      description: |-
+        delete the ParkingLot
+        <br>
+      operationId: ParkingLotController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+  /parking-lot/details/{id}:
+    get:
+      tags:
+      - parking-lot
+      description: |-
+        get ParkingLot by id
+        <br>
+      operationId: ParkingLotController.GetDetails
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ParkingLot'
+        "403":
+          description: :id is empty
+  /parking-slot/:
+    get:
+      tags:
+      - parking-slot
+      description: |-
+        get ParkingSlot
+        <br>
+      operationId: ParkingSlotController.GetAll
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ParkingSlot'
+        "403":
+          description: ""
+    post:
+      tags:
+      - parking-slot
+      description: |-
+        create ParkingSlot
+        <br>
+      operationId: ParkingSlotController.Create
+      parameters:
+      - in: body
+        name: body
+        description: body for ParkingSlot content
+        required: true
+        schema:
+          $ref: '#/definitions/models.ParkingSlot'
+      responses:
+        "201":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ParkingSlot'
+        "403":
+          description: body is empty
+  /parking-slot/{id}:
+    get:
+      tags:
+      - parking-slot
+      description: |-
+        get ParkingSlot by id
+        <br>
+      operationId: ParkingSlotController.GetOne
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ParkingSlot'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - parking-slot
+      description: |-
+        update the ParkingSlot
+        <br>
+      operationId: ParkingSlotController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for ParkingSlot content
+        required: true
+        schema:
+          $ref: '#/definitions/models.ParkingSlot'
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.ParkingSlot'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - parking-slot
+      description: |-
+        delete the ParkingSlot
+        <br>
+      operationId: ParkingSlotController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+  /reservation/:
+    get:
+      tags:
+      - reservation
+      description: |-
+        get Reservation
+        <br>
+      operationId: ReservationController.GetAll
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Reservation'
+        "403":
+          description: ""
+    post:
+      tags:
+      - reservation
+      description: |-
+        create Reservation
+        <br>
+      operationId: ReservationController.Create
+      parameters:
+      - in: body
+        name: body
+        description: body for Reservation content
+        required: true
+        schema:
+          $ref: '#/definitions/models.Reservation'
+      responses:
+        "201":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Reservation'
+        "403":
+          description: body is empty
+  /reservation/{id}:
+    get:
+      tags:
+      - reservation
+      description: |-
+        get Reservation by id
+        <br>
+      operationId: ReservationController.GetOne
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Reservation'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - reservation
+      description: |-
+        update the Reservation
+        <br>
+      operationId: ReservationController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for Reservation content
+        required: true
+        schema:
+          $ref: '#/definitions/models.Reservation'
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Reservation'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - reservation
+      description: |-
+        delete the Reservation
+        <br>
+      operationId: ReservationController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+  /user/:
+    get:
+      tags:
+      - user
+      description: |-
+        get all Users
+        <br>
+      operationId: UserController.GetAll
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.User'
+    post:
+      tags:
+      - user
+      description: |-
+        create users
+        <br>
+      operationId: UserController.CreateUser
+      parameters:
+      - in: body
+        name: body
+        description: body for user content
+        required: true
+        schema:
+          $ref: '#/definitions/models.User'
+      responses:
+        "200":
+          description: '{int} models.User.Id'
+        "403":
+          description: body is empty
+  /user/{uid}:
+    get:
+      tags:
+      - user
+      description: |-
+        get user by uid
+        <br>
+      operationId: UserController.Get
+      parameters:
+      - in: path
+        name: uid
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.User'
+        "403":
+          description: :uid is empty
+    put:
+      tags:
+      - user
+      description: |-
+        update the user
+        <br>
+      operationId: UserController.Update
+      parameters:
+      - in: path
+        name: uid
+        description: The uid you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for user content
+        required: true
+        schema:
+          $ref: '#/definitions/models.User'
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.User'
+        "403":
+          description: :uid is not int
+    delete:
+      tags:
+      - user
+      description: |-
+        delete the user
+        <br>
+      operationId: UserController.Delete
+      parameters:
+      - in: path
+        name: uid
+        description: The uid you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: uid is empty
+  /user/dd:
+    get:
+      tags:
+      - user
+      description: |-
+        get user by uid
+        <br>
+      operationId: UserController.Get
+      parameters:
+      - in: path
+        name: uid
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.User'
+        "403":
+          description: :uid is empty
+  /user/login:
+    get:
+      tags:
+      - user
+      description: |-
+        Logs user into the system
+        <br>
+      operationId: UserController.Login
+      parameters:
+      - in: query
+        name: username
+        description: The username for login
+        required: true
+        type: string
+      - in: query
+        name: password
+        description: The password for login
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} login success'
+        "403":
+          description: user not exist
+  /user/logout:
+    get:
+      tags:
+      - user
+      description: |-
+        Logs out current logged in user session
+        <br>
+      operationId: UserController.logout
+      responses:
+        "200":
+          description: '{string} logout success'
+  /vehicle/:
+    get:
+      tags:
+      - vehicle
+      description: |-
+        get Vehicle
+        <br>
+      operationId: VehicleController.GetAll
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Vehicle'
+        "403":
+          description: ""
+    post:
+      tags:
+      - vehicle
+      description: |-
+        park Vehicle
+        <br>
+      operationId: VehicleController.Create
+      parameters:
+      - in: body
+        name: body
+        description: body for Vehicle content
+        required: true
+        schema:
+          $ref: '#/definitions/models.Vehicle'
+      responses:
+        "201":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Vehicle'
+        "403":
+          description: body is empty
+  /vehicle/{id}:
+    get:
+      tags:
+      - vehicle
+      description: |-
+        get Vehicle by id
+        <br>
+      operationId: VehicleController.GetOne
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Vehicle'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - vehicle
+      description: |-
+        update the Vehicle
+        <br>
+      operationId: VehicleController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for Vehicle content
+        required: true
+        schema:
+          $ref: '#/definitions/models.Vehicle'
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Vehicle'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - vehicle
+      description: |-
+        delete the Vehicle
+        <br>
+      operationId: VehicleController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+  /vehicle/details:
+    get:
+      tags:
+      - vehicle
+      description: |-
+        get Vehicle by id
+        <br>
+      operationId: VehicleController.Get Vehicle Details by parkingLot and Slot
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Vehicle'
+        "403":
+          description: :id is empty
+  /vehicle/park:
+    post:
+      tags:
+      - vehicle
+      description: |-
+        park Vehicle
+        <br>
+      operationId: VehicleController.Park
+      parameters:
+      - in: body
+        name: body
+        description: body for Vehicle content
+        required: true
+        schema:
+          $ref: '#/definitions/models.Vehicle'
+      responses:
+        "201":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Vehicle'
+        "403":
+          description: body is empty
+  /vehicle/unpark/{id}:
+    put:
+      tags:
+      - vehicle
+      description: |-
+        unpark the Vehicle
+        <br>
+      operationId: VehicleController.UnPark
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for Vehicle content
+        required: true
+        schema:
+          $ref: '#/definitions/models.Vehicle'
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Vehicle'
+        "403":
+          description: :id is not int
+definitions:
+  models.Object:
+    title: Object
+    type: object
+    properties:
+      ObjectId:
+        type: string
+      PlayerName:
+        type: string
+      Score:
+        type: integer
+        format: int64
+  models.ParkingLot:
+    title: ParkingLot
+    type: object
+    properties:
+      Id:
+        type: integer
+        format: int64
+      active:
+        type: boolean
+      capacity:
+        type: integer
+        format: int64
+      createdBy:
+        type: integer
+        format: int64
+      name:
+        type: string
+  models.ParkingSlot:
+    title: ParkingSlot
+    type: object
+    properties:
+      Id:
+        type: integer
+        format: int64
+      IsMaintenance:
+        type: boolean
+      isOccupied:
+        type: boolean
+      parkingLotID:
+        type: integer
+        format: int64
+  models.Profile:
+    title: Profile
+    type: object
+    properties:
+      Address:
+        type: string
+      Age:
+        type: integer
+        format: int64
+      Email:
+        type: string
+      Gender:
+        type: string
+  models.Reservation:
+    title: Reservation
+    type: object
+    properties:
+      Id:
+        type: integer
+        format: int64
+      parkingLotId:
+        type: integer
+        format: int64
+      parkingSlotId:
+        type: integer
+        format: int64
+      vehicleId:
+        type: integer
+        format: int64
+  models.User:
+    title: User
+    type: object
+    properties:
+      Id:
+        type: string
+      Password:
+        type: string
+      Profile:
+        $ref: '#/definitions/models.Profile'
+      Username:
+        type: string
+  models.Vehicle:
+    title: Vehicle
+    type: object
+    properties:
+      Id:
+        type: integer
+        format: int64
+      registrationNo:
+        type: string
+      userId:
+        type: integer
+        format: int64
+tags:
+- name: user
+  description: |
+    Operations about Users
+- name: parking-lot
+  description: |
+    ParkingLotController operations for ParkingLot
+- name: parking-slot
+  description: |
+    ParkingSlotController operations for ParkingSlot
+- name: reservation
+  description: |
+    ReservationController operations for Reservation
+- name: vehicle
+  description: |
+    VehicleController operations for Vehicle

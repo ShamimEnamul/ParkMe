@@ -1,0 +1,193 @@
+2024/03/10 00:12:19.039  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:12:19.047  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:12:19.047  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:12:19.287  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:12:19.288  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:12:19.288  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:15:30.181  [D] [router.go:955]  |      127.0.0.1|[97;43m 404 [0m|   1.161084ms| nomatch|[97;46m POST    [0m /v1/parking-lot
+2024/03/10 00:16:18.424  [D] [router.go:955]  |      127.0.0.1|[97;43m 404 [0m|    454.583µs| nomatch|[97;46m POST    [0m /v1/parking-lot/
+2024/03/10 00:18:50.806  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|   8.980875ms|   match|[97;44m GET     [0m /     r:/
+2024/03/10 00:18:51.641  [D] [router.go:955]  |            ::1|[97;43m 404 [0m|   1.638083ms| nomatch|[97;44m GET     [0m /favicon.ico
+2024/03/10 00:19:02.513  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|   1.527916ms|   match|[97;44m GET     [0m /listconf   r:/listconf
+2024/03/10 00:20:01.065  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:20:01.075  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:20:01.075  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:20:01.310  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:20:01.310  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:20:01.310  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:20:09.358  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|     418.75µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2024/03/10 00:20:12.406  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|        258µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2024/03/10 00:20:14.774  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    228.583µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2024/03/10 00:20:23.769  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    659.458µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2024/03/10 00:20:24.841  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    284.625µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2024/03/10 00:20:27.871  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    483.833µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2024/03/10 00:20:33.073  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    296.375µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2024/03/10 00:20:40.060  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|      247.5µs|   match|[97;44m GET     [0m /     r:/
+2024/03/10 00:20:43.039  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    263.375µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2024/03/10 00:21:06.780  [D] [router.go:955]  |      127.0.0.1|[97;43m 404 [0m|     578.75µs| nomatch|[97;46m POST    [0m /v1/parking-lot
+2024/03/10 00:21:11.213  [D] [router.go:955]  |      127.0.0.1|[97;43m 404 [0m|    191.875µs| nomatch|[97;46m POST    [0m /v1/parking-lot
+2024/03/10 00:21:40.293  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:21:40.303  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:21:40.303  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:21:40.304  [I] [parser.go:85]  /Users/khanrubayat27/GolandProjects/golang_assesment/ParkMe/controllers no changed
+2024/03/10 00:21:40.304  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:21:40.304  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:21:44.767  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    766.708µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2024/03/10 00:22:03.798  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|        676µs|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:28:02.301  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:28:02.310  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:28:02.310  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:28:02.541  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:28:02.541  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:28:02.542  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:28:09.833  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|    544.625µs|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:35:15.148  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:35:15.160  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:35:15.161  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:35:15.404  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:35:15.405  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:35:15.405  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:35:17.960  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|    506.375µs|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:35:59.435  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:35:59.448  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:35:59.449  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:35:59.698  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:35:59.699  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:35:59.699  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:37:11.413  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:37:11.420  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:37:11.421  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:37:11.778  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:37:11.778  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:37:11.778  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:37:17.326  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|    479.083µs|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:37:32.762  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:37:32.771  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:37:32.771  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:37:32.772  [I] [parser.go:85]  /Users/khanrubayat27/GolandProjects/golang_assesment/ParkMe/controllers no changed
+2024/03/10 00:37:32.772  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:37:32.772  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:38:36.237  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:38:36.246  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:38:36.247  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:38:36.477  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:38:36.478  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:38:36.478  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:39:16.805  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:39:16.815  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:39:16.815  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:39:16.815  [I] [parser.go:85]  /Users/khanrubayat27/GolandProjects/golang_assesment/ParkMe/controllers no changed
+2024/03/10 00:39:16.815  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:39:16.815  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:39:54.406  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:39:54.414  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:39:54.414  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:39:54.415  [I] [parser.go:85]  /Users/khanrubayat27/GolandProjects/golang_assesment/ParkMe/controllers no changed
+2024/03/10 00:39:54.415  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:39:54.415  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:40:01.107  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|    837.334µs|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:40:28.302  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:40:28.312  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:40:28.312  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:40:28.539  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:40:28.540  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:40:28.540  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:40:49.413  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:40:49.423  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:40:49.423  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:40:49.647  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:40:49.648  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:40:49.648  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:40:57.571  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|    755.167µs|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:41:00.913  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|     176.75µs|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:41:37.708  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:41:37.712  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:41:37.713  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:41:37.713  [I] [parser.go:85]  /Users/khanrubayat27/GolandProjects/golang_assesment/ParkMe/controllers no changed
+2024/03/10 00:41:37.713  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:41:37.713  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:41:40.250  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|    444.625µs|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:42:35.670  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:42:35.679  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:42:35.680  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:42:35.919  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:42:35.920  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:42:35.920  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:42:42.665  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|    584.416µs|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:44:03.124  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:44:03.134  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:44:03.134  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:44:03.360  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:44:03.361  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:44:03.361  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:44:06.999  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|    811.834µs|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:44:45.885  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:44:45.895  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:44:45.895  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:44:45.895  [I] [parser.go:85]  /Users/khanrubayat27/GolandProjects/golang_assesment/ParkMe/controllers no changed
+2024/03/10 00:44:45.895  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:44:45.895  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:44:49.074  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  149.08825ms|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:45:11.948  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:45:11.961  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:45:11.962  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:45:11.962  [I] [parser.go:85]  /Users/khanrubayat27/GolandProjects/golang_assesment/ParkMe/controllers no changed
+2024/03/10 00:45:11.962  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:45:11.962  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:45:45.372  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m| 173.358583ms|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:46:29.718  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m| 111.494666ms|   match|[97;46m POST    [0m /v1/parking-lot   r:/v1/parking-lot/
+2024/03/10 00:52:58.502  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:52:58.511  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:52:58.511  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:52:58.755  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:52:58.757  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:52:58.757  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:53:44.135  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:53:44.143  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:53:44.143  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:53:44.384  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:53:44.386  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:53:44.386  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:53:50.420  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:53:50.426  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:53:50.426  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:53:50.672  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:53:50.672  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:53:50.672  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:53:57.376  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:53:57.387  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:53:57.387  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:53:57.629  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:53:57.630  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:53:57.630  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:55:39.675  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:55:39.678  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:55:39.678  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:55:40.160  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:55:40.160  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:55:40.160  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:56:33.891  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:56:33.898  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:56:33.898  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:56:34.128  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:56:34.129  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:56:34.129  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:56:42.249  [I] [main.go:19]  Database Connection Established
+2024/03/10 00:56:42.258  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2024/03/10 00:56:42.258  [I] [admin.go:100]  Admin server Running on :9091
+2024/03/10 00:56:42.481  [I] [parser.go:413]  generate router from comments
+2024/03/10 00:56:42.481  [I] [server.go:241]  http server Running on http://:8080
+2024/03/10 00:56:42.481  [I] [server.go:241]  http server Running on http://:9091
+2024/03/10 00:57:53.189  [C] [config.go:190]  the request url is  /v1/parking-lot
+2024/03/10 00:57:53.190  [C] [config.go:191]  Handler crashed with error can't find templatefile in the path:views/parkinglotcontroller/getall.tpl
+2024/03/10 00:57:53.190  [C] [config.go:197]  /Users/khanrubayat27/go/go1.21.4/src/runtime/panic.go:914
+2024/03/10 00:57:53.190  [C] [config.go:197]  /Users/khanrubayat27/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/template.go:75
+2024/03/10 00:57:53.190  [C] [config.go:197]  /Users/khanrubayat27/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/controller.go:311
+2024/03/10 00:57:53.190  [C] [config.go:197]  /Users/khanrubayat27/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/controller.go:262
+2024/03/10 00:57:53.190  [C] [config.go:197]  /Users/khanrubayat27/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/controller.go:239
+2024/03/10 00:57:53.190  [C] [config.go:197]  /Users/khanrubayat27/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:895
+2024/03/10 00:57:53.192  [C] [config.go:197]  /Users/khanrubayat27/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2024/03/10 00:57:53.192  [C] [config.go:197]  /Users/khanrubayat27/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2024/03/10 00:57:53.192  [C] [config.go:197]  /Users/khanrubayat27/go/go1.21.4/src/net/http/server.go:2938
+2024/03/10 00:57:53.192  [C] [config.go:197]  /Users/khanrubayat27/go/go1.21.4/src/net/http/server.go:2009
+2024/03/10 00:57:53.192  [C] [config.go:197]  /Users/khanrubayat27/go/go1.21.4/src/runtime/asm_arm64.s:1197
