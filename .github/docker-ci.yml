@@ -4,10 +4,10 @@ run-name: ${{github.actor}} is learning Github Actions
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   install-makefile:
     runs-on: ubuntu-latest
