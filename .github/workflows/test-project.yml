@@ -15,7 +15,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install make
 
-      - name: Hello World
+      - shell: bash
         run: make run_hello_world
 
         
