@@ -10,13 +10,15 @@ jobs:
   test-golang:
     runs-on: ubuntu-latest
     steps:
+      - uses:  actions/checkout@v2
       - shell: bash
         run: |
           sudo apt-get update
           sudo apt-get install make
 
       - shell: bash
-        run: make run_hello_world
+        run: |
+          make run_hello_world
 
         
     
