@@ -1,0 +1,27 @@
+name: test Go
+run-name: ${{github.actor}} is learning github action
+
+on:
+  push:
+    branches:
+      - tester/*
+
+jobs:
+  test-golang:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |
+          sudo apt update
+          sudo apt install
+      - name: Hello World
+        run: echo "hello world"
+
+        
+    
+    
+  
+
+
+
+
