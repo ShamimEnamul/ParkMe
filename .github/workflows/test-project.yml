@@ -12,8 +12,9 @@ jobs:
     steps:
       - shell: bash
         run: |
-          sudo apt update
-          sudo apt install
+          sudo apt-get update
+          sudo apt-get install make
+
       - name: Hello World
         run: make run_hello_world
 
